@@ -1,0 +1,44 @@
+// Оформление кнопки социальных сетей
+.social-button {
+    display: flex;
+    align-items: center;
+
+    // @extend %flex;
+
+    justify-content: center;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+   color: #AFB1B8;
+    background-color: $primary-color;
+    fill: #AFB1B8;
+
+    &:hover,
+    &:focus {
+        color: $primary-color;
+        background-color: $accent-text-color;
+    }
+
+}
+.social-element {
+    display: flex;
+    margin-right: 10px;
+    height: 44px;
+    width: 44px;
+
+
+    &:last-child {
+        margin-right: 0px;
+    }
+
+}
+
+.buton-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+ 

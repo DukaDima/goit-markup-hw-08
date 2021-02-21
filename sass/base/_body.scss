@@ -1,0 +1,11 @@
+body {
+    font-family: $primary-font, $reserve-font;
+    @include font();
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 1.72;
+
+    color: $primary-text-color;
+    background-color: $primary-color;
+
+}

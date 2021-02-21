@@ -1,0 +1,50 @@
+// links decoration
+.link-nostyle {
+    display: inline-block;
+    // text-decoration: none;
+    // margin: 0;
+    // padding: 0;
+    @extend %decorReset;
+
+    transition: color 250ms $cubic, background-color 250ms $cubic;
+ 
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:hover, 
+    &:focus {
+        color: $accent-text-color;
+    }
+}
+
+.link-footer {
+    // display: flex;
+    // align-items: center;
+    @extend %flex;
+
+    // text-decoration: none;
+    // margin: 0;
+    // padding: 0;
+    @extend %decorReset;
+
+    transition: color 250ms $cubic, background-color 250ms $cubic;
+
+
+  @include font(14px, 500, 16px);
+
+    // font-weight: 500;
+    // font-size: 14px;
+    // line-height: 1.14;
+
+    &:hover, &:focus {
+        color: $accent-text-color;
+    }
+}
+
+.cards-nostyle {
+    // text-decoration: none;
+    @extend %decorReset;
+    color: $primary-text-color;
+}

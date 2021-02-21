@@ -1,0 +1,42 @@
+// header decoration
+.header-type {
+    border-bottom: 1px solid #ececec;
+    background-color: $primary-color;
+}
+.link-text {
+    padding: 32px 0px;
+    color: $title-text-color;
+}
+.contact-text {
+    display: flex;
+    align-items: center;
+    // @extend %flex;
+    padding: 32px 0px;
+    color:$primary-text-color;
+}
+.item .link-text {
+    position: relative;
+}
+
+.link-text:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: $accent-text-color;
+    transform: scale(0);
+    transition: transform 250ms $cubic;
+    
+}
+.link-text:hover::after,
+.link-text:focus::after{
+    transform: scale(1);
+  
+}
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

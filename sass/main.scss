@@ -1,0 +1,38 @@
+@import "./utils/variables";
+@import "./utils/normalize";
+@import "./utils/placeholders";
+@import "./utils/mixin";
+@import "./base/reset";
+@import "./base/fonts";
+@import "./components/link.scss";
+@import "./base/body";
+@import "./utils/visuallyHidden";
+@import "./components/activPage";
+@import "./components/logo";
+@import "./components/container";
+@import "./components/titleText";
+@import "./components/button";
+@import "./components/functionalButtons";
+@import "./components/socialButton";
+@import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/hero";
+@import "./components/skils";
+@import "./components/task";
+@import "./components/person";
+@import "./components/regular-clients";
+// @import "./components/studio";
+@import "./components/filter-buttons";
+@import "./components/portfolio-cards";
+@import "./components/modal";
+@import "./layout/form";
+@import "./components/checkbox";
+
+// @import "./utils/main.scss";
+// @import "./placeholders/main.scss";
+// @import "./base/main.scss";
+// @import "./components/main.scss";
+// @import "./layout/main.scss";
+// @import "./pages/main.scss";
+

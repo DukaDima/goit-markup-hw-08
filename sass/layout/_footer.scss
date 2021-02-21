@@ -1,0 +1,80 @@
+// Footer decoration
+.footer-contact-text {
+    color: $primary-text-color;
+}
+.footer-type {
+    padding: 60px 0px;
+    background-color: $accent-color;
+}
+.footer-text {
+    color: $primary-color;
+}
+address { font-style: normal; }
+
+.footer-element {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+}
+.mail-list {
+    // display: flex;
+    // align-items: center;
+
+    @extend %flex;
+}
+.email {
+    display: flex;
+    height: 50px;
+    width: 360px;
+    margin-right: 12px;
+    align-items: center;
+}
+.mail-imput {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding-left: 15px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: $accent-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-container {
+    margin-right: 70px;
+}
+.mail-container {
+    margin-left: auto;
+}
+.footer-contact {
+    display: flex;
+    align-items: baseline;
+}
+.footer-social-title,
+.footer-mail-title    {
+    margin: 12px 0px 20px;
+
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.143;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color:$primary-color;
+    
+}
+.social-list  {
+    display: flex;
+}
+.buton-footer {  
+    background-color: rgba(255, 255,255, .1);
+    color: $primary-color;
+}

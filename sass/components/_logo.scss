@@ -1,0 +1,30 @@
+// Logo decoration
+.logo {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+
+    @include font(26px, 700, 32px);
+    
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.2;
+    font-family: $logo-font, $reserve-font;
+    color: $accent-text-color;
+
+    
+    &-footer {
+        padding-top: 0px;
+        padding-bottom: 0px; 
+        margin-bottom: 20px;
+    }
+
+}
+  
+
+.header-color {
+    color: $title-text-color;
+}
+.footer-color {
+    color: $primary-color;
+}

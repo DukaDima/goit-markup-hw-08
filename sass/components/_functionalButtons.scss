@@ -1,0 +1,95 @@
+
+// --------------  e-mail button     -----------
+.mail-button {
+
+    display: flex;
+    align-items: center;
+    // @extend %flex;
+
+     height: 50px;
+     padding:0 29px;
+ 
+     color: $primary-color;
+
+     @include font(16px, 700, 30px);
+    //  font-weight: 700;
+    //  font-size: 16px;
+    //  line-height: 1.88;
+     letter-spacing: 0.06em;
+ 
+     background-color: $accent-text-color;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+
+     &-text {
+        margin-right: 10px;
+       }
+     &-icon {
+        fill: currentColor;
+       }
+
+}
+
+//  -----  end  e-mail button    -----------
+
+ // ---------   submit button   --------
+
+.form-button {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+
+
+    @include font(16px, 700, 30px);
+    // font-weight: 700;
+    // font-size: 16px;
+    // line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $accent-text-color;
+    color: $primary-color;
+    
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+    }
+
+}
+
+
+// ---------   end  submit button   --------
+
+// -------   close button     ------
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    transition: color 250ms $cubic, border 250ms $cubic;
+
+    cursor: pointer;
+    width: 31px;
+    height: 31px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: $title-text-color;
+    background-color: $primary-color;
+
+    &:hover,
+    &:focus {
+      
+       color: $accent-text-color;
+    }
+
+}
+.cross,
+.cross :hover {
+    fill: currentColor;
+}
+
+
+// -------  end close button     ------

@@ -1,0 +1,71 @@
+// skils section-----
+.skils {
+    padding: 94px 0px;
+    background-color: $primary-color;
+
+    &__container {
+        // display: flex;
+        @extend %flex ;
+        justify-content: center;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    
+        @include font(14px, 700, 16px);
+        // font-weight: 700;
+        // font-size: 14px;
+        // line-height: 1.14;
+    
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 0;
+        letter-spacing: 0.03em;
+    }
+
+    
+  &__element {
+      width: 270px;
+      margin-right: 30px;
+
+       &:last-child {
+           margin-right: 0px;
+        }
+    
+        &::before {
+            display: block;
+            content: "";
+            height: 120px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            background: $secondary-color;
+            background-size: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+           
+        }
+        
+        &:nth-child(1)::before {
+            background-image: url(../images/icons/antenna.svg);
+        }
+        &:nth-child(2)::before {
+            background-image: url(../images/icons/clock.svg);
+        }
+        &:nth-child(3)::before {
+            background-image: url(../images/icons/diagram.svg);
+        }
+        &:nth-child(4)::before {
+            background-image: url(../images/icons/astronaut.svg);
+        }
+
+    }
+
+}
+
+
+
+
+
+
