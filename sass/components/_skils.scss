@@ -1,15 +1,37 @@
 // skils section-----
-.skils {
-    padding: 94px 0px;
-    background-color: $primary-color;
+.container {
+  
+    width: 100%;
+    margin: 0px auto; 
+    padding: 0px 15px;
+    outline: 1px solid red;
+ 
+}
 
-    &__container {
-        // display: flex;
-        @extend %flex ;
-        justify-content: center;
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+      
     }
+}
+
+
+
+.skils {
+      padding: 60px 0px;
+      background-color: $primary-color;
+
+      &__container {
+        width: 100%;
+        margin: -15px;
+        // background-color: darkorchid;
+        // display: flex;
+        // @extend %flex ;
+        // justify-content: center;
+     }
 
     &__title {
+       text-align: center;
         margin-bottom: 10px;
     
         @include font(14px, 700, 16px);
@@ -27,12 +49,15 @@
 
     
   &__element {
-      width: 270px;
-      margin-right: 30px;
+      width: 100%;
+    //   background-color: darkgoldenrod;
+      padding: 15px;
+    //   width: 270px;
+    //   margin-right: 30px;
 
-       &:last-child {
-           margin-right: 0px;
-        }
+    //    &:last-child {
+    //        margin-right: 0px;
+    //     }
     
         &::before {
             display: block;
@@ -63,6 +88,35 @@
     }
 
 }
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    
+   .skils__container {
+       
+        display: flex;
+        flex-wrap: wrap;
+        // @extend %flex ;
+        justify-content: center;
+    }
+    .skils__element {
+        width: calc((100%-4*15px)/2);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    .skils__element {
+        width: calc((100%-4*15px)/4);
+    }
+
+}
+
+
 
 
 

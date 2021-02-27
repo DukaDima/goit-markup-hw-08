@@ -161,7 +161,9 @@
 <symbol id="icon-check" viewBox="0 0 18 18">
 <path d="M3.957 7.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z" fill="#fff" stroke="#fff" stroke-width=".2"/>
 </symbol>
-
+<symbol id="burger" viewBox="0 0 40 40">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
+</symbol>
 
 </defs>
 </svg>

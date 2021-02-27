@@ -5,6 +5,14 @@
 
     @extend %list ;
 }
+.link-nostyle {
+
+     // text-decoration: none;
+    // margin: 0;
+    // padding: 0;
+
+    @extend %decorReset;
+}
 
 img {
     display: block;
