@@ -1,12 +1,12 @@
 // person section
-.container {
+// .container {
   
-    width: 100%;
-    margin: 0px auto; 
-    padding: 0px 15px;
-    // outline: 1px solid red;
+//     width: 100%;
+//     margin: 0px auto; 
+//     padding: 0px 15px;
+//     // outline: 1px solid red;
  
-}
+// }
 
 .person {
     padding: 60px 0px;
@@ -96,7 +96,7 @@
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
-       
+        
     }
     .person__list {
         
@@ -118,6 +118,7 @@
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
+       
     }
 
     .person__element {

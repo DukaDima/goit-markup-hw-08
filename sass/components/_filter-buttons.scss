@@ -1,13 +1,39 @@
 
 .filter-buttons {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    // justify-content: center;
     margin-bottom: 50px;
 }
 .filter-element {
     margin-right: 8px;
+    margin-bottom: 8px;
 
     &:last-child {
         margin-right: 0px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+      
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .filter-buttons {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+      
     }
 }
