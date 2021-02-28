@@ -24,13 +24,17 @@ address { font-style: normal; }
     // align-items: center;
 
     @extend %flex;
+    flex-direction: column;
 }
 .email {
     display: flex;
+    width: 100%;
     height: 50px;
-    width: 360px;
-    margin-right: 12px;
+    width: 100%;
+    // width: 360px;
+    // margin-right: 12px;
     align-items: center;
+    margin-bottom: 20px;
 }
 .mail-imput {
     height: 100%;
@@ -49,17 +53,27 @@ address { font-style: normal; }
 }
 
 .adress-container {
-    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    align-items: center;
+    // margin-right: 70px;
 }
 .mail-container {
-    margin-left: auto;
+    // margin: auto;
+    width: 100%;
+    margin-top: 60px;
 }
 .footer-contact {
+   
     display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+    flex-direction: column;
+    align-items: center;
 }
 .footer-social-title,
 .footer-mail-title    {
+    text-align: center;
     margin: 12px 0px 20px;
 
    font-weight: 700;
@@ -77,4 +91,103 @@ address { font-style: normal; }
 .buton-footer {  
     background-color: rgba(255, 255,255, .1);
     color: $primary-color;
+}
+
+// .social-contact {
+//     margin-left: 100px;
+// }
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .footer-contact {
+   
+        // display: flex;
+        align-items: baseline;
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        // align-items: center;
+    }
+    .adress-container {
+        // display: block;
+        // flex-direction: row;
+        align-items: baseline;
+        margin-bottom: 0px;
+        margin-right: 70px;
+        // margin-bottom: 0px;
+        // margin-right: 70px;
+    }
+
+
+    .email {
+        width: 450px;
+        margin-right: 12px;
+        align-items:center;
+        // margin-bottom: 0px;
+    }
+    .social-contact {
+        margin-left: 100px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+    .footer-contact {
+   
+        flex-wrap: nowrap;
+    }
+    .mail-list {
+    flex-direction: row;
+    align-items: center;
+     }
+    //  .adress-container {
+    //      display: block;
+    //     //  flex-direction: row;
+    //      margin-bottom: 0px;
+    //      margin-right: 70px;
+    //      margin-bottom: 0px;
+    //      margin-right: 70px;
+    //  }
+
+     .mail-container {
+        // margin: auto;
+      margin-left: 80px;
+        margin-top: 0px;
+    }
+    
+    .email {
+        width: 360px;
+        margin-right: 12px;
+        align-items:center;
+        margin-bottom: 0px;
+    }
+
+    .social-list  {
+    display: flex;
+    }
+
+     .footer-social-title,
+     .footer-mail-title    {
+      text-align: left;
+
+      }
+
+      .social-contact {
+        margin-left: 0px;
+    }
 }

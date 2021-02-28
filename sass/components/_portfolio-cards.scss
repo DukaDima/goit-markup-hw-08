@@ -129,7 +129,7 @@
     }
 
     .cards {
-        padding: 60px;
+        padding: 60px 0;
 
         &__element {
             width: calc((90%-4*15px)/2);
@@ -152,8 +152,11 @@
         width: 1200px;
     }
 
+
+    
+
     .cards {
-        padding: 94px;
+        padding: 94px 0;
 
         &__element {
             width: calc((90%-6*15px)/3);

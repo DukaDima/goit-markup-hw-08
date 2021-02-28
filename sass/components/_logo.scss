@@ -4,7 +4,7 @@
     // padding-top: 25px;
     // padding-bottom: 25px; 
 
-    @include font(26px, 700, 32px);
+    @include font(24px, 700, 28px);
     
     // font-weight: 700;
     // font-size: 26px;
@@ -53,9 +53,15 @@
         width: 1200px;
     }
 .logo {
+    @include font(26px, 700, 32px);
     margin-right: 93px;
     padding-top: 25px;
     padding-bottom: 25px; 
+
+    &-footer {
+       
+        margin-bottom: 0px;
+    }
    }
 
 }
