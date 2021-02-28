@@ -19,7 +19,7 @@
       <div class="container header-nav">
           <nav class="nav">         
             <a class="link-nostyle logo" href="./index.html">Web<span class="header-color">Studio</span></a> 
-            <button type="button" class="burger-button">
+            <button type="button" class="burger-button" data-menu-button>
                 <svg class="burger-icon">
                   <use href="./images/symbol-defs.svg#burger"></use>
                 </svg>
@@ -47,6 +47,60 @@
                                </a>
                 </li>
            </ul>      
+      </div>
+
+      <div class="mobail-menu" data-menu>
+        <button type="button" class="button mobail-close-button" data-menu-close>
+          <svg  class= "mobail-close-cross" >
+            <use href="./images/symbol-defs.svg#cross"></use>
+         </svg>    
+
+        </button>
+       
+        <div class="mobail-nav-container">
+          <ul class=" ul-nostyle mobail-menu-nav">
+               <li class="mobail-menu-item">
+                 <a href="" class="link-nostyle mobail-activ-page mobail-menu-nav-link">Студия</a>
+                </li>
+               <li class="mobail-menu-item">
+                 <a href="" class="link-nostyle link-text mobail-menu-nav-link ">Портфолио</a>
+                </li>
+               <li class="mobail-menu-item">
+                 <a href="" class=" link-nostyle link-text mobail-menu-nav-link"> Контакты</a>
+                </li>
+            
+          </ul>
+         </div>
+       <div class="mobail-contact-container">
+            <ul class=" ul-nostyle mobail-menu-contact">
+                 <li class="mobail-contact-item">
+                      <a href="tel:380961111111" class=" link-nostyle mobail-contakt-link tel-text">+38  096 96 111 11 11</a>
+                      
+               </li>
+                 <li class="mobail-contact-item">
+                      <a href="mailto:info@devstudio.com" class=" link-nostyle mobail-contakt-link mail-text">info@devstudio.com</a>
+                      
+                  </li>
+            </ul>
+        </div>
+
+         <div class="mobail-social-container">
+             <ul class="ul-nostyle mobail-menu-social">
+               <li class="mobail-social-item">
+                 <a href="" class="link-nostyle mobail-social-link">Instagram</a>
+                </li>
+               <li class="mobail-social-item">
+                 <a href="" class="link-nostyle mobail-social-link">Twitter</a>    
+                </li>
+               <li class="mobail-social-item">
+                 <a href="" class="link-nostyle mobail-social-link">Facebook</a>                
+                </li>
+               <li class="mobail-social-item">
+                 <a href="" class="link-nostyle mobail-social-link">Linkedin</a>           
+                </li>
+             </ul>
+        </div>
+
       </div>
 
     </header>
@@ -418,7 +472,7 @@
     
 <!--Модальное окно-->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
 
          <div class="modal">          
           
@@ -485,6 +539,7 @@
 <!--Скрипт-->
 
   <script src="./js/modal.js"></script>
-
+  <script src="./js/mobail-menu.js"></script>
+  
   </body>
 </html>
