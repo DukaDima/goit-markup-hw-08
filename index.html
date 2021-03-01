@@ -60,13 +60,13 @@
         <div class="mobail-nav-container">
           <ul class=" ul-nostyle mobail-menu-nav">
                <li class="mobail-menu-item">
-                 <a href="" class="link-nostyle mobail-activ-page mobail-menu-nav-link">Студия</a>
+                 <a href="./index.html" class="link-nostyle mobail-activ-page mobail-menu-nav-link">Студия</a>
                 </li>
                <li class="mobail-menu-item">
-                 <a href="" class="link-nostyle link-text mobail-menu-nav-link ">Портфолио</a>
+                 <a href="./portfolio.html" class="link-nostyle link-text mobail-menu-nav-link ">Портфолио</a>
                 </li>
                <li class="mobail-menu-item">
-                 <a href="" class=" link-nostyle link-text mobail-menu-nav-link"> Контакты</a>
+                 <a href="#" class=" link-nostyle link-text mobail-menu-nav-link"> Контакты</a>
                 </li>
             
           </ul>
@@ -145,20 +145,44 @@
         <div class="container">
            <h2 class="title-text task__title">Чем мы занимаемся</h2>
            <ul class="ul-nostyle task__list">
-             <li class="task__element">          
-                 <img src="./images/task-images/task-1.jpg" alt="img1" width="370">
+             <li class="task__element"> 
+
+               <picture>
+                <source srcset="./images/task-images/task-1.webp 1x,  ./images/task-images/task-1@2x.webp 2x" 
+                media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/task-images/task-1.jpg 1x,  ./images/task-images/task-1@2x.jpg 2x" 
+                       media="(min-width: 1200px)">
+                <img src="./images/task-images/task-1.jpg" alt="img1">
+               </picture>         
+                 
                  <div class="task__img">
                    <h3 class="task__name">Десктопные приложения</h3>
                  </div>  
              </li>
              <li class="task__element">
-                   <img src="./images/task-images/task-2.jpg" alt="img2" width="370">
+
+                 <picture>
+                  <source srcset="./images/task-images/task-2.webp 1x,  ./images/task-images/task-2@2x.webp 2x" 
+                  media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/task-images/task-2.jpg 1x,  ./images/task-images/task-2@2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+                  <img src="./images/task-images/task-2.jpg" alt="img2">
+                 </picture>
+                  
                   <div class="task__img">
                    <h3 class="task__name">Мобильные приложения</h3>
                  </div>  
              </li>
              <li class="task__element">     
-                  <img src="./images/task-images/task-3.jpg" alt="img3" width="370">
+
+                 <picture>
+                  <source srcset="./images/task-images/task-3.webp 1x,  ./images/task-images/task-3@2x.webp 2x" 
+                  media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/task-images/task-3.jpg 1x,  ./images/task-images/task-3@2x.jpg 2x" 
+                     media="(min-width: 1200px)">
+                  <img src="./images/task-images/task-3.jpg" alt="img3">
+                 </picture>
+                  
                  <div class="task__img">
                     <h3 class="task__name">Дизайнерские решения</h3>
                  </div>  
@@ -173,7 +197,30 @@
             <h2 class="title-text person__title">Наша команда</h2>
             <ul class="ul-nostyle person__list">
               <li class="person__element">
-                <img class="person__images" src="./images/person-images/demjanenko-desktop.jpg" alt="Игорь Демьяненко" width="270">
+ 
+                 <picture>
+                   <source srcset="./images/person-images/demjanenko-desktop.webp 1x, ./images/person-images/demjanenko-desktop@2x.webp 2x" 
+                   media="(min-width: 1200px)" type="image/webp">
+
+                   <source srcset="./images/person-images/demjanenko-desktop.jpg 1x, ./images/person-images/demjanenko-desktop@2x.jpg 2x" 
+                   media="(min-width: 1200px)">
+
+                   <source srcset="./images/person-images/demjanenko-tablet.webp 1x, ./images/person-images/demjanenko-tablet@2x.webp 2x" 
+                   media="(min-width: 768px)" type="image/webp">
+
+                   <source srcset="./images/person-images/demjanenko-tablet.jpg 1x, ./images/person-images/demjanenko-tablet@2x.jpg 2x" 
+                   media="(min-width: 768px)">
+
+                   <source srcset="./images/person-images/demjanenko-mobile.webp 1x, ./images/person-images/demjanenko-mobile@2x.webp 2x" 
+                   media="(min-width: 480px)" type="image/webp">
+
+                   <source srcset="./images/person-images/demjanenko-mobile.jpg 1x, ./images/person-images/demjanenko-mobile@2x.jpg 2x" 
+                   media="(min-width: 480px)">
+                 
+                  <img class="person__images" src="./images/person-images/demjanenko-desktop.jpg" alt="Игорь Демьяненко">
+                 </picture>
+
+               
                 <div class="person__information"> 
                 <h3 class="title-text person__text">Игорь Демьяненко</h3>
                 <p class="person__work">Product designer</p>
@@ -212,7 +259,30 @@
                 </div>
               </li>
               <li class="person__element">
-                <img class="person__images" src="./images/person-images/repina-desktop.jpg" alt="Ольга Репина" width="270">
+
+                <picture>
+                  <source srcset="./images/person-images/repina-desktop.webp 1x, ./images/person-images/repina-desktop@2x.webp 2x" 
+                  media="(min-width: 1200px)" type="image/webp">
+
+                  <source srcset="./images/person-images/repina-desktop.jpg 1x, ./images/person-images/repina-desktop@2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+
+                  <source srcset="./images/person-images/repina-tablet.webp 1x, ./images/person-images/repina-tablet@2x.webp 2x" 
+                  media="(min-width: 768px)" type="image/webp">
+
+                  <source srcset="./images/person-images/repina-tablet.jpg 1x, ./images/person-images/repina-tablet@2x.jpg 2x" 
+                  media="(min-width: 768px)">
+
+                  <source srcset="./images/person-images/repina-mobile.webp 1x, ./images/person-images/repina-mobile@2x.webp 2x" 
+                  media="(min-width: 480px)" type="image/webp">
+
+                  <source srcset="./images/person-images/repina-mobile.jpg 1x, ./images/person-images/repina-mobile@2x.jpg 2x" 
+                  media="(min-width: 480px)">
+
+
+                  <img class="person__images" src="./images/person-images/repina-desktop.jpg" alt="Ольга Репина">
+                </picture>
+
                 <div class="person__information"> 
                 <h3 class="title-text person__text">Ольга Репина</h3>
                 <p class="person__work">Frontend Developer</p>
@@ -251,7 +321,32 @@
               </div>
               </li>
               <li class="person__element">
-                <img class="person__images" src="./images/person-images/tarasov-desktop.jpg" alt="Николай Тарасов" width="270">
+                <picture>
+
+                  <source srcset="./images/person-images/tarasov-desktop.webp 1x, ./images/person-images/tarasov-desktop@2x.webp 2x" 
+                  media="(min-width: 1200px)" type="image/webp">
+
+                  <source srcset="./images/person-images/tarasov-desktop.jpg 1x, ./images/person-images/tarasov-desktop@2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+
+                  <source srcset="./images/person-images/tarasov-tablet.webp 1x, ./images/person-images/tarasov-tablet@2x.webp 2x" 
+                  media="(min-width: 768px)" type="image/webp">
+
+                  <source srcset="./images/person-images/tarasov-tablet.jpg 1x, ./images/person-images/tarasov-tablet@2x.jpg 2x" 
+                  media="(min-width: 768px)">
+
+                  <source srcset="./images/person-images/tarasov-mobile.webp 1x, ./images/person-images/tarasov-mobile@2x.webp 2x" 
+                  media="(min-width: 480px)" type="image/webp">
+
+                  <source srcset="./images/person-images/tarasov-mobile.jpg 1x, ./images/person-images/tarasov-mobile@2x.jpg 2x" 
+                  media="(min-width: 480px)">
+
+
+                  <img class="person__images" src="./images/person-images/tarasov-desktop.jpg" alt="Николай Тарасов">
+                </picture>
+
+
+                
                 <div class="person__information">
                     <h3 class="title-text person__text">Николай Тарасов</h3>
                     <p class="person__work">Marketing</p>
@@ -290,7 +385,35 @@
                   </div>
               </li>
               <li class="person__element">
-                <img class="person__images" src="./images/person-images/ermakov-desktop.jpg" alt="Михаил Ермаков">
+
+                <picture>
+
+                  <source srcset="./images/person-images/ermakov-desktop.webp 1x, ./images/person-images/ermakov-desktop@2x.webp 2x" 
+                  media="(min-width: 1200px)" type="image/webp">
+
+                  <source srcset="./images/person-images/ermakov-desktop.jpg 1x, ./images/person-images/ermakov-desktop@2x.jpg 2x" 
+                  media="(min-width: 1200px)">
+
+                  <source srcset="./images/person-images/ermakov-tablet.webp 1x, ./images/person-images/ermakov-tablet@2x.webp 2x" 
+                  media="(min-width: 768px)" type="image/webp">
+
+                  <source srcset="./images/person-images/ermakov-tablet.jpg 1x, ./images/person-images/ermakov-tablet@2x.jpg 2x" 
+                  media="(min-width: 768px)">
+
+                  <source srcset="./images/person-images/ermakov-mobile.webp 1x, ./images/person-images/ermakov-mobile@2x.webp 2x" 
+                  media="(min-width: 480px)" type="image/webp">
+
+                  <source srcset="./images/person-images/ermakov-mobile.jpg 1x, ./images/person-images/ermakov-mobile@2x.jpg 2x" 
+                  media="(min-width: 480px)">
+
+
+
+
+                  <img class="person__images" src="./images/person-images/ermakov-desktop.jpg" alt="Михаил Ермаков">
+                </picture>
+
+
+                
                <div class="person__information">
                   <h3 class="title-text person__text">Михаил Ермаков</h3>
                   <p class="person__work">UI Designer</p>
