@@ -8,9 +8,10 @@
 
 .modal-title {
     margin: 0 0 12px ;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20px, 700, 24px);
+    // font-weight: 700;
+    // font-size: 20px;
+    // line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-color;
@@ -19,8 +20,9 @@
 
 .label-text {
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.167;
+    @include font(12px, 500, 14px);
+    // font-size: 12px;
+    // line-height: 1.167;
     letter-spacing: 0.01em;
 }
 
@@ -96,6 +98,35 @@
     fill: currentColor;
     transition:  fill 250ms $cubic;
 }
+
+
+
+
+// @media screen and (min-width: 480px) {
+//     .container {
+//         width: 480px;
+//     }
+
+//     .modal-title {
+//         @include font(20px, 700, 24px);
+//         // font-weight: 700;
+//         // font-size: 20px;
+//         // line-height: 1.15;
+        
+    
+//     }
+    
+//     .label-text {
+//         @include font(12px, 500, 14px);
+
+//         // margin-bottom: 4px;
+//         // font-size: 12px;
+//         // line-height: 1.167;
+        
+//     }
+
+    
+// }
 
 
 // .form-field textarea:hover,

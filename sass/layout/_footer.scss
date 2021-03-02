@@ -74,7 +74,7 @@ address { font-style: normal; }
 .footer-social-title,
 .footer-mail-title    {
     text-align: center;
-    margin: 12px 0px 20px;
+    margin: 0 0 20px;
 
    font-weight: 700;
    font-size: 14px;
@@ -121,7 +121,7 @@ address { font-style: normal; }
     .adress-container {
         // display: block;
         // flex-direction: row;
-        align-items: baseline;
+        align-items: center;
         margin-bottom: 0px;
         margin-right: 70px;
         // margin-bottom: 0px;

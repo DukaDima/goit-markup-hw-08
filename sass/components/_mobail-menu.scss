@@ -23,11 +23,14 @@
     padding: 48px 40px;
     transform: translateX(-50%) translateY(-100%);
     background-color: $primary-color;
+    z-index: 5;
+    opacity: 0;
     
     transition: transform 250ms $cubic;
 }
 
 .mobail-menu.is-open {
+    opacity: 1;
     transform:translateX(-50%) translateY(0);
 }
 .mobail-menu-nav-link {
@@ -46,23 +49,29 @@
     color: $accent-text-color;
 }
 
-.mobail-menu-nav-link {
-    @include font(40px, 500, 47px);
-}
-.tel-text {
-    @include font(34px, 500, 40px);
-    color: $accent-text-color;
-}
-.mail-text {
-    @include font(24px, 500, 28px);
-    color: $title-text-color;
-}
 
-.mobail-social-link {
-    @include font(18px, 500, 22px);
-    color: $accent-text-color;
-    padding-left: 10px;
-}
+    .mobail-menu-nav-link {
+        @include font(30px, 500, 40px);
+    }
+    .tel-text {
+        @include font(24px, 500, 30px);
+        color: $accent-text-color;
+    }
+    .mail-text {
+        @include font(20px, 500, 24px);
+        color: $title-text-color;
+    }
+    
+    .mobail-social-link {
+        @include font(12px, 500, 18px);
+        color: $accent-text-color;
+        padding-left: 5px;
+    }
+
+
+
+
+
 
 // .mobail-activ-page {
 //     color: $accent-text-color;
@@ -84,13 +93,41 @@
 }
 .mobail-menu-social {
     display: flex;
+    flex-wrap: wrap;
     margin-left: -10px;
 }
 .mobail-social-item + .mobail-social-item {
-    margin-left: 10px;
+    margin-left: 5px;
     border-left: 1px solid rgba(33, 33, 33, 0.2);
 
 }
+
+@media screen and (min-width: 480px) {
+
+    .mobail-menu-nav-link {
+        @include font(40px, 500, 47px);
+    }
+    .tel-text {
+        @include font(34px, 500, 40px);
+        color: $accent-text-color;
+    }
+    .mail-text {
+        @include font(24px, 500, 28px);
+        color: $title-text-color;
+    }
+    
+    .mobail-social-link {
+        @include font(18px, 500, 22px);
+        color: $accent-text-color;
+        padding-left: 10px;
+    }
+    .mobail-social-item + .mobail-social-item {
+        margin-left: 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    
+    }
+
+    }
 
 // .mobail-social-item::after {
 //     content: "";
