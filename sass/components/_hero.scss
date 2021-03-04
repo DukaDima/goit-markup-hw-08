@@ -14,12 +14,7 @@
 
 
 
-@media screen and (min-width: 480px) {
-  .container {
-      width: 480px;
-    
-  }
-}
+
 
 
 
@@ -31,9 +26,9 @@
 
      &__text {
           margin-top: 0;
-          margin-bottom: 30px;
+          margin-bottom: 15px;
 
-          @include font ( 26px, 900, 42px);
+          @include font ( 20px, 900, 32px);
       
           // font-weight: 900;
           // font-size: 44px;
@@ -75,6 +70,27 @@
       rgba(47, 48, 58, 0.4)
       ),
      url(../images/hero-images/header-mobile@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+      
+    }
+
+    .hero__text {
+      // margin-top: 0;
+      margin-bottom: 30px;
+
+      @include font ( 26px, 900, 42px);
+  
+      // font-weight: 900;
+      // font-size: 44px;
+      // line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $primary-color;
     }
   }
 

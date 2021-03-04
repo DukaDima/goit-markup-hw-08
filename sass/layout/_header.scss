@@ -118,6 +118,7 @@
        
       .site-nav {
           display: flex;
+          margin-left: 88px;
          
       }
 
@@ -135,6 +136,9 @@
     @media screen and (min-width: 1200px) {
         .container {
             width: 1200px;
+        }
+        .site-nav {
+            margin-left: 0;
         }
         .contact-nav {
             display: flex;    
